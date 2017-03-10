@@ -1,0 +1,206 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto);
+body {
+  box-sizing: border-box;
+  font-family: Roboto, Helvetica, Arial, serif;
+  background-size: cover;
+}
+
+header img {
+  border-radius: 50%;
+  margin: 20px auto;
+  display: block;
+  width: 450px;
+  // border: 5px solid #fff;
+  // background-image: url("pink.png");
+}
+
+.column {
+  width:auto;
+}
+
+aside {
+  border-radius: 50%;
+  margin: 0 auto;
+  display: block;
+  max-height: 450px;
+  width: 80%;
+  background-size: auto;
+  overflow: hidden;
+  box-shadow: 0 0 100px 10px #fff;
+  transition: all ease 1s;
+}
+
+aside:hover {
+
+  background-size: cover;
+  // background-color: rgb(241, 172, 186);
+  border-radius: 5px;
+  height: 600px;
+  max-width: 1000px;
+  box-shadow: 0 0 70px 10px #fff;
+
+  img {
+    opacity: 0.1;
+    width: 0px;
+    transition: all ease 1s;
+  }
+}
+
+header {
+  text-align: center;
+}
+
+header h1 {
+  position: relative;
+  text-align: center;
+  color: #fff;
+  text-shadow: 1px 1px rgba(0, 0, 0, 0.5);
+  font-size: 25px;
+  line-height: 25px;
+  display: inline-block;
+  padding: 10px;
+  transition: all ease 0.250s;
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  h2 {
+    padding: 5px;
+  }
+}
+
+aside:hover header h1 {
+  margin-top: 0px;
+  outline: 0 solid #fff;
+  border-top: 0px solid #fff;
+  border-bottom: 1px solid #fff;
+}
+
+header h2 {
+  text-align: center;
+  color: #fff;
+  text-shadow: 1px 1px rgba(0, 0, 0, 0.5);
+  font-size: 17px;
+  font-weight: normal;
+  line-height: 0px;
+  margin: 0;
+}
+
+.profile-bio {
+  margin-top: 20px;
+  padding: 1px 20px 10px 20px !important;
+  color: #fff;
+  font-size: 14px;
+  opacity: 1;
+ }
+
+aside:hover .profile-bio {
+  opacity: 1;
+
+  img {
+    height: 200px;
+    width: 200px;
+    opacity: 1;
+    border-radius: 50%;
+  }
+}
+
+.profile-bio {
+  margin-top: 20px;
+  padding: 1px 20px 10px 20px !important;
+  // transition: all linear 1.5s;
+  color: #fff;
+  font-size: 14px;
+  opacity: 1;
+//   background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.42) 49%, rgba(0, 0, 0, 0.61) 100%);
+ }
+
+aside:hover .work-profile-bio {
+  transition: all ease 0.2s;
+  img {
+    height: 120px;
+    width: auto;
+    opacity: 1;
+    border-radius: 40%;
+    transition: all ease 0.2s;
+    box-shadow: 0 0 100px 10px #fff;
+
+
+  }
+
+  img:hover{
+    opacity: 0.5;
+  }
+
+
+}
+
+.card {
+  h1 {
+    font-size: 30px;
+    color: rgb(166, 232, 167);
+  }
+}
+
+// .row {
+//   img {
+//     background-color: blue;
+//   }
+//
+//   img:hover{
+//     background-color: pink;
+//     opacity: 0.5;
+//   }
+// }
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+
+
+}
+// .row:hover .overlay:hover {
+.overlay:hover {
+  opacity: 1;
+}
+
+.overlay.column_1:hover {
+ background-color: rgb(131, 221, 122);
+}
+
+.overlay.column_2:hover {
+ background-color: rgb(241, 239, 52);
+}
+
+.overlay.column_3:hover {
+ background-color: rgb(251, 181, 77);
+}
+
+.overlay.column_4:hover {
+ background-color: rgb(241, 108, 108);
+ transition: 1s;
+}
+
+.overlay.column_5:hover {
+ background-color: rgb(246, 119, 245);
+}
+
+.overlay.column_6:hover {
+ background-color: rgb(97, 155, 232);
+}
+
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}

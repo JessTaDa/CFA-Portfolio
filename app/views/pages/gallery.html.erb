@@ -1,0 +1,30 @@
+
+
+<h1>Pages#gallery</h1>
+<p>Find me in app/views/pages/gallery.html.erb</p>
+
+
+<!-- flexbox container
+loop over the img urls inside a div for each box -->
+
+<!-- create flex box boxes -->
+<!--
+<div class = "container">
+  <% @images.each do |image| %>
+    <div class = "adult">
+       <img src = "<%= image[0] %>">
+    </div>
+  <% end %>
+</div> -->
+
+
+
+<div class = "flex-container">
+  <% @images.each do |item| %>
+    <div class="flex-item">
+<p><%= item[:title] %></p>
+      <img src="<%= item[:url] %>" class="flex-img">
+
+    </div>
+  <% end %>
+</div>

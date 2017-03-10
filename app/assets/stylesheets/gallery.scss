@@ -1,0 +1,29 @@
+
+h1 {
+  color: green;
+}
+.flex-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.flex-item {
+  // display: flex;
+  height: 250px;
+  width: 200px;
+  // overflow: hidden;
+  background-color: rgb(101, 54, 205);
+  // justify-content: center;
+  // align-items: baseline;
+  // margin-left: 20px;
+  // flex-wrap: wrap;
+}
+
+.flex-img {
+  // height: 200px;
+  width: 100%;
+  // flex-wrap: wrap;   //what does this do?
+  // margin-left: 20px;
+
+}
